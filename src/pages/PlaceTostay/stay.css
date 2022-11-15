@@ -1,0 +1,99 @@
+#p2s-nft{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    left: 3%;
+    padding: 0px;
+    gap: 24px;
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin-top: 60px;
+}
+#p2s-nft > img{
+    width: 292px;
+    height: 372px;
+
+}
+
+#anchor-2{
+    margin-top: 4%;
+    text-decoration: none;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #434343;
+}
+
+#footer-p2s{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    color: #fff;
+    left: 0px;
+    top: 1900px;
+    background:  #1D1D1E;
+    
+}
+#f-txt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 217px;
+    position: absolute;
+    width: 50%;
+    height: 169px;
+    left: 533px;
+    top: 63px;
+    
+}
+#f-txt > div{
+    width: 100%;
+}
+#log{
+    position: absolute;
+left: 7.85%;
+right: 75.97%;
+top: 18.01%;
+bottom: 69.57%;
+
+box-shadow: inset 4px 4px 44px rgba(96, 96, 96, 0);
+}
+#fb{
+    position: absolute;
+left: 7.85%;
+right: 90.9%;
+top: 60.25%;
+bottom: 34.16%;
+}
+#insta{
+    position: absolute;
+    left: 11.32%;
+    right: 87.43%;
+    top: 60.25%;
+    bottom: 34.16%;
+    
+}
+#twitter{
+    position: absolute;
+    left: 14.79%;
+    right: 83.96%;
+    top: 60.25%;
+    bottom: 34.16%;
+}
+#cr{
+    position: absolute;
+left: 8.0%;
+right: 82.15%;
+top: 82.92%;
+bottom: 11.49%;
+width: 50%;
+
+}
