@@ -1,25 +1,34 @@
-import React from "react";
-import Home from "./pages/Home";
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import Nft from "./pages/Nft";
-import Place2stay from "./pages/PlaceTostay";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import Wallet from "./layout/Wallet";
+import Home from "./pages/Home";
+import PlaceToStay from "./pages/PlaceToStay";
 
 function App() {
+  const [connectWallet, setConnectWallet] = useState(false);
+
+  const showConnectWallet = () => {
+    setConnectWallet(true);
+  };
+
+  const hideConnectWallet = () => {
+    setConnectWallet(false);
+  };
+
   return (
-    <div className="App">
+    <main>
       <Router>
+        <Header onShow={showConnectWallet} />
+        {connectWallet && <Wallet onHide={hideConnectWallet} />}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/nft">
-            <Nft />
-          </Route>
-          <Route path="/PlaceTostay">
-            <Place2stay />
-           </Route> 
+          <Route exact path="/" element={<Home />} />
+          <Route path="/place-to-stay" element={<PlaceToStay />} />
         </Routes>
+        <Footer />
       </Router>
-    </div>
+    </main>
   );
 }
 

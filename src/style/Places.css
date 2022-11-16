@@ -1,0 +1,19 @@
+.places-section {
+  background: var(--whiteline-background-color);
+  padding: 120px 20px 80px;
+}
+
+.places-container > h2 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 59.95px;
+  margin-bottom: 50px;
+}
+
+/* BREAKPOINTS */
+@media screen and (max-width: 576px) {
+  .places-container > h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}

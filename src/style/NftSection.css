@@ -1,0 +1,110 @@
+.nfts {
+  background: var(--major-background-color);
+  padding: 120px 20px 80px;
+}
+
+.nft-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft-about-text {
+  color: var(--white-color);
+}
+
+.nft-about-text > h2 {
+  font-size: 48px;
+  line-height: 59.95px;
+  margin-bottom: 35px;
+}
+
+.nft-about-text > p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  margin-bottom: 50px;
+  width: 415px;
+}
+
+.nft-about-text > button {
+  padding: 14px 33px;
+  border: none;
+  border-radius: 8px;
+  color: #a02279;
+  background: var(--whiteline-background-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.nft-about-img > img {
+  width: 704px;
+  height: 574.85px;
+}
+
+/* BREAKPOINTS */
+/* Large Screens */
+ @media screen and (max-width: 1250px) {
+  .nft-about-img > img {
+    width: 604px;
+    height: 474.85px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .nft-about-img > img {
+    width: 504px;
+    height: 374.85px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 920px) {
+  .nft-container {
+    display: grid;
+    gap: 50px;
+  }
+
+  .nft-about-text > h2 {
+    font-size: 35px;
+  }
+
+  .nft-about-text > p {
+    font-size: 16px;
+  }
+
+  .nft-about-img {
+    display: grid;
+    justify-content: center;
+    width: auto;
+  }
+
+  .nft-about-img > img {
+    width: 504px;
+    height: 374.85px;
+  }
+
+  .nft-container > .nft-about-img {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nft-about-img > img {
+    width: 404px;
+    height: 274.85px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nft-about-img > img {
+    width: auto;
+    height: 200px;
+  }
+
+  .nft-about-text > p {
+    width: auto;
+  }
+}

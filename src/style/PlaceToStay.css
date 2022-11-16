@@ -1,0 +1,77 @@
+.place-to-stay-section {
+  padding: 120px 20px 80px;
+}
+
+.place-to-stay-locations {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  margin-bottom: 50px;
+}
+
+.place-to-stay-locations > div:nth-child(1) {
+  display: flex;
+  gap: 48px;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--textblack-color);
+}
+
+.place-to-stay-locations > div:nth-child(2) {
+  width: 161px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+  padding: 14px 13px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.place-to-stay-locations > div:nth-child(2) > img {
+  width: 24px;
+  height: 24px;
+}
+
+.place-to-stay-locations-mobile {
+  display: none;
+}
+
+/* BREAKPOINTS */
+/* Large Screens */
+@media screen and (max-width: 1100px) {
+  .place-to-stay-locations {
+    display: none;
+  }
+
+  .place-to-stay-locations-mobile {
+    display: block;
+  }
+
+  .place-to-stay-locations-dropdown {
+    height: 48px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #b4b4b4;
+    border-radius: 8px;
+    padding: 5px 13px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 19px;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    background: url(../assets/setting.png) no-repeat right;
+    background-size: 24px;
+    background-origin: content-box;
+    display: inline-block;
+    position: relative;
+  }
+
+  #Location {
+    -moz-appearance:none; 
+    -webkit-appearance:none;
+    appearance:none !important;
+  }
+}
